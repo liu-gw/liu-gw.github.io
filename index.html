@@ -4,10 +4,105 @@
 <head>
     <meta charset="utf-8">
     <title>kindle</title>
+    <style>
+        body {
+            /* text-align: center; */
+        }
+
+        .vertical {
+            width: 20px;
+            line-height: auto;
+        }
+
+        .calendar {
+            width: 60%;
+            height: 1105px;
+            border: 5px solid #333;
+            margin: 1px 2px 1px 2px;
+        }
+
+        .font-first {
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .font-sencond-vertical {
+            width: 20px;
+            margin: 0 auto;
+            line-height: 200px;
+            font-size: 80px;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 20px 40px 20px 20px;
+        }
+
+        .font-sencond {
+            font-size: 500px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            padding: 45px 0px 0px 70px;
+        }
+
+        .font-third {
+            font-size: 45px;
+            font-family: 'Times New Roman', Times, serif;
+            margin: 150px 40px 40px 40px;
+            font-weight: bolder;
+            letter-spacing: 10px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>liu-gw kindle test</h1>
+    <div name="third-line" class="font-third">
+        <div>
+            短期总是比我们想象的要长
+        </div>
+        <div>
+            长期总是比我们想象的要短
+        </div>
+    </div>
+    <div>
+        <!-- <div style="float: left;" class="calendar">
+            <div>
+                <div name="first-line" class="font-first">
+                    <span>Friday</span>
+                    <span style="padding: 0 150px 0 150px; font-weight: bold;">October</span>
+                    <span>2021</span>
+                </div>
+                <div name="second-line">
+                    <div style="float: left;width: 20%;">
+                        <div class="font-sencond-vertical" style="font-weight: bold;">
+                            星期五
+                        </div>
+                    </div>
+                    <div style="float: left;width: 60%;">
+                        <div class="font-sencond">
+                            11
+                        </div>
+                    </div>
+                    <div style="float: left;width: 20%;">
+                        <div class="font-sencond-vertical" style="font-size: 60px;line-height: 100px;">
+                            农历九月十三
+                        </div>
+                    </div>
+                    <div name="third-line" class="font-third">
+                        <div>
+                            短期总是比我们想象的要长
+                        </div>
+                        <div>
+                            长期总是比我们想象的要短
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="float: right;">
+
+            </div> -->
+        </div>
 </body>
+<script>
+    const now = new Date();
+    document.getElementById("day").innerHTML = now.getDay();
+</script>
 
 </html>
